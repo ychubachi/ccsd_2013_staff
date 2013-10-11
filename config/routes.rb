@@ -1,4 +1,6 @@
 Ccsd2013Staff::Application.routes.draw do
+  resources :blogs
+
   resources :addressbooks
 
   get "welcome/index"
