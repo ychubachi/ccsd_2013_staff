@@ -1,3 +1,11 @@
 language: ruby
 rvm:
 - 2.0.0
+deploy:
+  provider: heroku
+  api_key:
+    secure: ebfU2hXmEX7tTwMuoQG1GnfyZW8d5lXNNGtao9NOeBo6AAiLIjmNkcZrjEPOrMIz+k1FJE+QWCtpbHUUIHI+i9SJNMfbrpPxBSoXujqWmv8WjyRUwyF9oc1CLPEEKwSSx1kKcwiNED4GAXnQlM00qSqyw/yzt/DWVO8gju3Jy40=
+  app: gentle-river-4076
+  on:
+    repo: ychubachi/ccsd_2013_staff
+  run: "rake db:migrate"
