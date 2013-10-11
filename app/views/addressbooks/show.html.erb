@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Zip:</strong>
+  <%= @addressbook.zip %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @addressbook.address %>
+</p>
+
+<%= link_to 'Edit', edit_addressbook_path(@addressbook) %> |
+<%= link_to 'Back', addressbooks_path %>
